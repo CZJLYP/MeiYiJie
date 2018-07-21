@@ -1,0 +1,221 @@
+
+.content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #f3f3f3;
+    box-sizing: border-box;
+}
+.fui-header{
+    height: 2.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: .8rem;
+    position: absolute;
+    top: 0;
+    background: #fff;
+}
+.fui-header .fui-header-left {
+    position: absolute;
+    left: 0;
+    padding-left: .3rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    z-index: 2;
+}
+.fui-header a {
+    height: 2.2rem;
+    line-height: 2.2rem;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    color: #999;
+    display: block;
+    padding: 0 .5rem;
+    padding-top: 4px;
+    font-size: .7rem;
+}
+.fui-header a.back:before {
+    content: " ";
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 0.5rem;
+    width: 0.5rem;
+    border-width: 0 0 2px 2px;
+    border-color: #666;
+    border-style: solid;
+    position: relative;
+    top: 0;
+}
+.searchbar {
+    padding: 0.5rem 0;
+    overflow: hidden;
+    height: 2.2rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+}
+.page-goods-list .fui-header .searchbar .search-input input {
+    border: 0;
+    background: #efefef;
+}
+
+.searchbar .search-input {
+    -webkit-transform: translate3d(0, 50, 0);
+    transform: translate3d(0, 50, 0);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    margin-right: 0;
+        position: relative;
+}
+#search{    position: relative;
+    left: 58px;
+    width: 265px;
+    height: 25px;
+    background: #ccc;
+}
+.sort {
+    position: relative;
+    width: 100%;
+    top: 2.2rem;
+    height: 40px;
+    line-height: 40px;
+    -webkit-box-align: center;
+    padding: .4rem 0;
+    background: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+}
+.sort .item {
+    position: relative;
+    width: 1%;
+    display: table-cell;
+    text-align: center;
+    font-size: 0.86rem;
+    border-left: 1px solid #e7e7e7;
+    color: #666;
+}
+
+/* 商品 */
+.fui-content {
+    top: 2.4rem;
+}
+.fui-content.navbar {
+    bottom: 2.5rem;
+    padding-bottom: 2.2rem;
+    position: relative;
+}
+
+.fui-content-inner {
+    box-sizing: border-box;
+    border-top: 1px solid transparent;
+    margin-top: -1px;
+    padding-bottom: 0.5rem;
+    overflow-x: hidden;
+    height: 545px;
+}
+.fui-goods-group {
+    height: auto;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+.fui-goods-item {
+    position: relative;
+    height: auto;
+    padding: 0.8rem;
+    border-bottom: 1px solid #e7e7e7;
+    background: #fff;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fui-goods-item .detail {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #fff;
+    padding-left: .5rem;
+}
+.fui-goods-item .detail .price {
+    position: relative;
+    top: 10px;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+}
+.fui-goods-item .detail .price .text {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #ff5555;
+    font-size: 0.8rem;
+}
+.fui-goods-item .detail .price .buy {
+    display: block;
+    text-align: center;
+    line-height: 1rem;
+    color: #fff;
+    font-size: 0.6rem;
+    background: #fe5455;
+    display: block;
+    font-size: 0.6rem;
+    padding: 0 .25rem;
+}
+
+.fui-goods-item .image {
+    height: 4rem;
+    width: 4rem;
+    float: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+#listblock{position: absolute;right: 10px;font-size: 26px;}
+
+
+.footer{
+    height:46px;
+    background:#fff;
+    border-top:1px solid #ccc;
+}
+.footer ul{
+    display:flex;
+    height:46px;
+    text-align: center;
+    font-size: 16px;
+}
+.footer ul li{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    align-self:center;
+}
+/* 导航栏 */
+
+.j-title{height: auto;overflow: hidden;background-color: #fff;}
+.j-title ul li{
+    width: 28%;
+    height:38px;
+    line-height: 38px;
+    border:.5px solid #999;
+    display: inline-block;
+    padding: 0;
+    margin: 8px;
+    text-align: center
+}

@@ -1,0 +1,219 @@
+body,html{height: 100%;}
+
+#MeiYiJia{
+    height: 100%;
+    display:flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/*header*/
+.header {
+    width: 100%;
+    height: 60px;
+    background: #cccccc52;
+}
+
+.header form{
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+.header form .search{
+    height:60px;
+    width: 550px;
+    border:0 ;
+    border-radius: 50px;
+    padding-left: 150px;
+    
+}
+.header form i{
+    position: absolute;
+    top: 10px;
+    left: 130px;
+}
+
+
+/*中间部分*/
+.main{
+    flex:1;
+    overflow-x: hidden;
+}
+
+
+/*轮播图*/
+.main .banner{
+    height: 340px;
+    position:relative;
+    width:750px;
+    overflow: hidden;
+}
+.main .banner ul{
+    position: absolute;
+    left:0;
+    top:0;
+    overflow:hidden;
+}
+.main .banner li{float:left;}
+.main .banner img{
+    display: block;
+    width: 750px;
+    height: 340px;
+}
+.main .banner > span{
+    position: absolute;
+    left:0;
+    top:50%;
+    width:50px;
+    height:100px;
+    line-height:100px;
+    text-align:center;
+    background-color: rgba(0,0,0,.3);
+    color:#fff;
+    transform: translate(0,-50%);
+}
+
+.main .banner .page{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:3px;
+    text-align:center;
+}
+.main .banner .page span{
+    display: inline-block;
+    margin:0 5px;
+    width:30px;
+    height:30px;
+    text-align:center;
+    line-height:40px;
+    border-radius:50%;
+    color:#666;
+    background-color: #cfcfcf;
+    font-size:27px;
+}
+.main .banner .page span.active{
+    background-color: #f60;
+    color:#fff;
+}
+
+
+/*分类*/
+.classify{
+    display: flex;
+    /*height: 538px;*/
+    flex-wrap: wrap;
+    background: #FFFFFF;
+    border-bottom: 1px solid #ccc;
+}
+.classify li{
+    width: 20%;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    line-height: 90px;
+}
+.classify li img{
+    width: 90px;
+    height:90px;
+    margin-left:25px;
+}
+
+
+/*优选商家*/
+.youxuan{
+    display:flex;
+    flex-direction: column;
+}
+.youxuan ul {
+    display:flex;
+    flex-wrap: wrap;
+}
+.youxuan ul li{
+    flex-direction: column;
+    width:33%;
+    text-align: center;
+}
+.youxuan img{
+    width: 100%;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+.title{
+    display:flex;
+    flex-direction: column;
+}
+.title .title_img{
+    width: 100%;
+    height: 150px;
+}
+.title ul {
+    display:flex;
+    flex-wrap: wrap;
+}
+.title ul li{
+    flex-direction: column;
+    width:33%;
+    text-align: center;
+}
+
+.title_goods{
+    background: #e4e4e49c;
+}
+.title .goods{
+    width: 45%;
+    float: left;
+    border-bottom: 0;
+    background: none;
+    padding: 0.25rem;
+    display: block;
+    margin: 17px;
+    background: #fff;
+    height: 390px;
+}
+
+.title_goods img{
+    width:100%;
+    height:200px;
+
+}
+
+.
+
+
+
+
+
+
+
+
+/*footer*/
+.footer{
+    height:98px;
+    background:#fff;
+    border-top:1px solid #ccc;
+}
+.footer ul{
+    display:flex;
+    height:98px;
+    text-align: center;
+    font-size: 27px;
+}
+.footer ul li{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    align-self:center;
+}

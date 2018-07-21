@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1" id="vp">
+		<script type="text/javascript">
+			// 把尺寸放大N倍（N是window.devicePixelRatio）
+			var wd = document.documentElement.clientWidth * window.devicePixelRatio / 10;
+			//物理像素*设备像素比=真实像素
+			document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+			// 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
+			var scale = 1 / window.devicePixelRatio;
+			var mstr = 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no';
+			document.getElementById("vp").content = mstr;
+		</script>
+		<link rel="stylesheet" type="text/css" href="../css/User_Center.css" />
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+	</head>
+
+	<body>
+		<div class="User_Center">
+            <div class="user_content">
+    			<div class="header">
+    				<span>会员中心</span>
+    			</div>
+    			<div class="headinfo style-2">
+    				<div class="face ">
+    					<img src="../img/user.png">
+    				</div>
+    				<div class="inner">
+    					<div class="name">180xxxx8630</div>
+    					<div class="level">[普通会员]</div>
+    					<div class="credit">余额:
+    						<span style="color: #fef31f;">0.00</span>
+    					</div>
+    					<div class="credit">积分:
+    						<span style="color: #fef31f;">0</span>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="fui-cell-group fui-cell-click">
+    				<a class="fui-cell external" href="#">
+    					<div class="fui-cell-text" style="color: #333333;">
+    						我的订单
+    					</div>
+    					<div class="fui-cell-remark" style="color: #888888;">
+    						查看全部>
+    					</div>
+    				</a>
+    			</div>
+    			<div class="fui-icon-group noborder col-4 selecter">
+    				<a class="fui-icon-col" style="border-left: none;line-height: 70px;" href="#">
+    					<div class="icon icon-green radius">
+    						<i class="icon iconfont icon-sweep" style="color: #aaaaaa;"></i>
+    					</div>
+    					<div class="text" style="color: #7a7a7a;">
+    						待付款
+    					</div>
+    				</a>
+    				<a class="fui-icon-col" style="border-left: 1px solid #ebebeb;line-height: 70px;" href="#">
+    					<div class="icon icon-green radius">
+    						<i class="icon iconfont icon-pengyou" style="color: #aaaaaa;"></i>
+    					</div>
+    					<div class="text" style="color: #7a7a7a;">待发货</div>
+    				</a>
+    				<a class="fui-icon-col" style="border-left: 1px solid #ebebeb;line-height: 70px;" href="#">
+    					<div class="icon icon-green radius">
+    						<i class="icon iconfont icon-tianjia" style="color: #aaaaaa;"></i>
+    					</div>
+    					<div class="text" style="color: #7a7a7a;">待收货</div>
+    				</a>
+    				<a class="fui-icon-col" style="border-left: 1px solid #ebebeb;line-height: 70px;" href="#">
+    					<div class="icon icon-green radius">
+    						<i class="icon iconfont icon-zhuanzhang" style="color: #aaaaaa;"></i>
+    					</div>
+    					<div class="text" style="color: #7a7a7a;">退换货</div>
+    				</a>
+    			</div>
+
+    			<div style="padding-top: 20px;">
+    				<a href="#">
+    					<img src="https://go.myj.com.cn/attachment/images/3/2018/07/wq00dOUJuj77D7qjQ1I98U9G8dzMJA.jpg" alt="" style="width: 100%;" />
+    				</a>
+    			</div>
+    			<div class="fui-cell-group fui-cell-click" style="margin-top: 0px; background-color: #ffffff;">
+    				<a class="fui-cell external" href="#">
+    					<!-- <div class="fui-cell-icon" style="color: #999999;"><i class="icon icon-wodeyouhuiquan" style="color: #999999;"></i></div> -->
+    					<div class="fui-cell-text" style="color: #333333;">领取优惠券</div>
+    					<div class="fui-cell-remark" style="color: #888888;">
+    						查看
+    					</div>
+    				</a>
+    				<a class="fui-cell external" href="#">
+    					<!-- <div class="fui-cell-icon" style="color: #999999;"><i class="icon icon-lingquyouhuiquan1" style="color: #999999;"></i></div> -->
+    					<div class="fui-cell-text" style="color: #333333;">我的优惠券</div>
+    					<div class="fui-cell-remark" style="color: #888888;">
+    						查看
+    					</div>
+    				</a>
+    				<a class="fui-cell external" href="#">
+    					<!-- <div class="fui-cell-icon" style="color: #999999;"><i class="icon icon-cart" style="color: #999999;"></i></div> -->
+    					<div class="fui-cell-text" style="color: #333333;">我的购物车</div>
+    					<div class="fui-cell-remark" style="color: #888888;">
+    						查看
+    					</div>
+    				</a>
+    				<a class="fui-cell external" href="#">
+    					<!-- <div class="fui-cell-icon" style="color: #999999;"><i class="icon icon-like" style="color: #999999;"></i></div> -->
+    					<div class="fui-cell-text" style="color: #333333;">我的关注</div>
+    					<div class="fui-cell-remark" style="color: #888888;">
+    						查看
+    					</div>
+    				</a>
+    				<a class="fui-cell external" href="#">
+    					<!-- <div class="fui-cell-icon" style="color: #999999;"><i class="icon icon-location1" style="color: #999999;"></i></div> -->
+    					<div class="fui-cell-text" style="color: #333333;">我的足迹</div>
+    					<div class="fui-cell-remark" style="color: #888888;">
+    						查看
+    					</div>
+    				</a>
+    				<a class="fui-cell external" href="#">
+    					<!-- <div class="fui-cell-icon" style="color: #999999;"><i class="icon icon-deliver1" style="color: #999999;"></i></div> -->
+    					<div class="fui-cell-text" style="color: #333333;">收货地址管理</div>
+    					<div class="fui-cell-remark" style="color: #888888;">
+    						查看
+    					</div>
+    				</a>
+    			</div>
+    			<div class="fui-cell-group fui-cell-click transparent" style="margin-top: 10px;">
+    				<a class="fui-cell external changepwd" href="#">
+    					<div class="fui-cell-text" style="text-align: center; color: #ff5555;border-color: #ff5555;background: #ffffff">
+    						<p>修改密码</p>
+    					</div>
+    				</a>
+    				<a class="fui-cell external btn-logout" href="#">
+    					<div class="fui-cell-text" style="text-align: center; color:#ffffff;background:#ff5555">
+    						<p>退出登录</p>
+    					</div>
+    				</a>
+    			</div>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li>
+                        <i class="icon iconfont icon-tianjia"></i>
+                        <a href="../index.html">商城首页</a>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-pengyou"></i>
+                        <a href="./youhui.html">我的券</a>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-huodong"></i>
+                        <a href="./car.html">购物车</a>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-wode"></i>
+                        <a href="./User_Center.html">个人中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</body>
+
+</html>

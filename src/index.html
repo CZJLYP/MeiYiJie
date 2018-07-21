@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>商城</title>
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1" id="vp">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript">
+			// 把尺寸放大N倍（N是window.devicePixelRatio）
+			var wd = document.documentElement.clientWidth * window.devicePixelRatio / 10;
+			//物理像素*设备像素比=真实像素
+			document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+			// 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
+			var scale = 1 / window.devicePixelRatio;
+			var mstr = 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no';
+			document.getElementById("vp").content = mstr;
+		</script>
+		<script src="lib/jquery-3.3.1.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+
+	<body>
+		<div id="MeiYiJia">
+
+			<div class="main">
+				<div class="header">
+					<form action="#">
+						<i class="icon iconfont icon-sousuo"></i>
+						<input type="text" class="search" />
+					</form>
+				</div>
+				<div class="banner">
+					<ul>
+						<li><img src="https://go.myj.com.cn/attachment/images/3/2018/07/EeU6zC2nEvEHlexg01n6AA2uzHZ2vg.jpg" alt=""></li>
+						<li><img src="https://go.myj.com.cn/attachment/images/3/2018/07/gk7h165aZ5xG1zhG1z1670pxQXNSX1.jpg" alt=""></li>
+						<li><img src="https://go.myj.com.cn/attachment/images/3/2018/07/hcvi6Y9jyjQIM9RoRq9QI2riMjMX0y.jpg" alt=""></li>
+						<li><img src="img/004.jpg" alt=""></li>
+					</ul>
+				</div>
+
+				<ul class="classify">
+					<li>
+						<!-- <i class="icon iconfont icon-huodong"></i> -->
+						<img src="./img/shuiguo.png" />
+						<a href="./html/goodslist.html">水果生鲜</a>
+					</li>
+					<li>
+						<!-- <i class="icon iconfont icon-huodong"></i> -->
+						<img src="https://go.myj.com.cn/attachment/images/3/2018/06/Te8Y85X5WsYeZ250PkvvxQz2xwVQY0.png" alt="" />
+						<a href="./html/goodslist.html">食品饮料</a>
+					</li>
+					<li>
+						<img src="https://go.myj.com.cn/attachment/images/3/2018/06/KRATO2u5Z5WWjD68241J54W522qAjS.png" alt="" />
+						<a href="./html/goodslist.html">美妆个护</a>
+					</li>
+					<li>
+						<img src="https://go.myj.com.cn/attachment/images/3/2018/06/C17VowOVea7t1CWC5e57vzCz7wvq7w.png" alt="" />
+						<a href="./html/goodslist.html">家居日用</a>
+					</li>
+					<li>
+						<img src="https://go.myj.com.cn/attachment/images/3/2018/06/KxAaAwIJHXpibACagAAiP9ZBwiAaAJ.png" alt="" />
+						<a href="./html/goodslist.html">全部分类</a>
+					</li>
+					<li>
+						<img src="https://go.myj.com.cn/attachment/images/3/2018/06/xvrruiID252hixiP2r5r2ezJzhDE0I.png" alt="" />
+						<a href="./html/goodslist.html">服饰箱包</a>
+					</li>
+					<li>
+						<img src="https://go.myj.com.cn/attachment/images/3/2018/06/BOeoeBqE4e9Z59qGB2gprBgZr2Qer8.png" alt="" />
+						<a href="./html/goodslist.html">母婴用品</a>
+					</li>
+					<li>
+						<img src="https://go.myj.com.cn/attachment/images/3/2018/06/BOeoeBqE4e9Z59qGB2gprBgZr2Qer8.png" alt="" />
+						<a href="./html/goodslist.html">手机数码</a>
+					</li>
+					<li>
+						<img src="https://go.myj.com.cn/attachment/images/3/2018/06/l36fmA7s22pA8PMCp6W8a283s2yA3w.png" alt="" />
+						<a href="./html/goodslist.html">家电厨具</a>
+					</li>
+					<li>
+						<img src="https://go.myj.com.cn/attachment/images/3/2018/06/iJJ0pDZ4s2DppJ86k02Pp4jZ93e420.png" alt="" />
+						<a href="./html/goodslist.html">领券中心</a>
+					</li>
+				</ul>
+
+				<div class="youxuan">
+					<img src="img/youxuan.PNG" />
+					<ul>
+						<li>
+							<a href="#">
+								<img src="img/youxuan1.jpg" />
+								<span>满199减100</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/youxuan2.png" style="padding:0 5px" />
+								<span>满100减20</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/youxuan3.png" />
+								<span>3折起</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="miaosha title">
+					<a href="#">
+						<img src="img/miaosha.PNG" style="margin:auto;"/>
+					</a>
+					<div class="miaosha_goods title_goods">
+
+					</div>
+				</div>
+
+				<div class="youxian title ">
+					<a href="#">
+						<img src="img/youxian.PNG" class="title_img" />
+					</a>
+					<div class="youxian_goods title_goods">
+						
+					</div>
+				</div>
+
+				<div class="shenghuo title ">
+					<a href="#">
+						<img src="img/shenghuo.PNG" class="title_img" />
+					</a>
+					<div class="shenghuo_goods title_goods">
+						
+					</div>
+				</div>
+
+				<div class="meizhuang title">
+					<a href="#">
+						<img src="img/meizhuang.PNG" class="title_img" />
+					</a>
+					<div class="meizhuang_goods title_goods">
+
+					</div>
+				</div>
+
+				<div class="baobao title">
+					<a href="#">
+						<img src="img/baobao.PNG" class="title_img" />
+					</a>
+					<div class="baobao_goods title_goods">
+
+					</div>
+				</div>
+
+				<div class="keji title">
+					<a href="#">
+						<img src="img/keji.PNG" class="title_img" />
+					</a>
+					<div class="youxian_goods title_goods">
+						
+					</div>
+				</div>
+
+				<div class="gengduo">
+					<a href="./html/goodslist.html">
+						<img src="img/gengduo.png" style="margin:auto" />
+					</a>
+				</div>
+
+			</div>
+
+			<div class="footer">
+				<ul>
+					<li>
+						<i class="icon iconfont icon-tianjia"></i>
+						<a href="index.html">商城首页</a>
+					</li>
+					<li>
+						<i class="icon iconfont icon-pengyou"></i>
+						<a href="html/youhui.html">我的券</a>
+					</li>
+					<li>
+						<i class="icon iconfont icon-huodong"></i>
+						<a href="html/car.html">购物车</a>
+					</li>
+					<li>
+						<i class="icon iconfont icon-wode"></i>
+						<a href="html/User_Center.html">个人中心</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美宜佳商城注册</title>
+    <script src="../src/js/jquery-3.3.1.js"></script>    
+    <style>
+	label{display:inline-block;width:120px;text-align:right;}
+    </style>
+</head>
+<body>
+    <div>
+        
+                    <p>
+                        <label for="username">用户名:</label>
+                        <input type="text" id="username" name="username" placeholder="用户名">
+                    </p>
+                    <p>
+                        <label for="password">密码:</label>
+                        <input type="password" id="password" name="password" placeholder="请输入密码">
+                    </p>
+                    <p>
+                        <label for="pwd">确认密码:</label>
+                        <input type="password" id="pwd" name="pwd">
+                    </p>
+                    <button id="btn">注册</button>
+            
+    </div>
+    <script>
+    $(function(){
+        $('#btn').click(function(){
+            var username = $('#username').val();
+            var password = $('#password').val();
+            var pwd = $('#pwd').val();
+            if(username.length < 6 || username.length > 20){
+                alert('用户名格式为6位数以上20位数以下');
+                return false;
+            }
+            if(password != pwd){
+                alert('两次密码输入不一致');
+                return false;
+            }
+            if(password.trim() == ''){
+                alert('密码不能为空');
+                return false;
+            }
+       
+        })
+    })
+    
+    $(function(){
+        $('#btn').click(function(){
+            $.post('http://10.3.138.196:8181/registers',{username: $('#username').val(),password:$('#password').val()},function(res){
+                console.log(res.status)
+                if(res.status){
+                    window.location.href = 'login.html'
+                }else{
+                    window.alert('账号已经存在')
+                }
+            })
+            // $.ajax({
+            //     url:'http://10.3.138.196:8181/registers',
+            //     type: 'post',
+            //     data:{username:$('#username').val(),password:$('#password').val()},
+            //     success: function(res){
+            //         console.log(res);
+            //     }
+
+            // })
+        })
+    })
+
+
+</script>
+
+</body>
+</html>

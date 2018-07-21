@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美宜佳商城</title>
+    <link rel="stylesheet" href="../css/goodslist.css">
+    <link rel="stylesheet" href="../css/base1.css">
+    <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css">  
+    <script src="../lib/jquery-3.3.1.js"></script>
+    <script src="../js/goodslist.js"></script>
+    <script src="../js/common.js"></script>
+  
+</head>
+
+<body>
+    <div class="content">
+        <div class="fui-header">
+            <div class="fui-header-left">
+                <a class="back" id="prev"></a>
+            </div>
+            <div class="title">
+                <div class="searchbar searchbar-active">
+                    <div class="search-input">
+                        <input type="search" id="search" placeholder="输入关键字...">    <i class="fa fa-list" id="listblock"></i>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="sort">
+            <div class="item on">
+                <span class="text">综合</span>
+            </div>
+            <div class="item">
+                <span class="text">销量</span>
+            </div>
+            <div class="item">
+                <span class="text">价格</span>
+                <i class="fa fa-unsorted"></i>
+            </div>
+            <div class="item">
+                <span class="text j-filter">筛选</span>
+                <i class="fa fa-wifi"></i>
+            </div>
+        </div>
+        <div class="fui-content navbar">
+            <div class="fui-content-inner">
+                <!-- <div class="j-goods">
+                    <div class="j-title">
+                        <ul>
+                            <li>推荐商品</li>
+                            <li>新品上市</li>
+                            <li>热卖商品</li>
+                            <li>促销商品</li>
+                            <li>卖家包邮</li>
+                            <li>限时抢购</li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+      <div class="footer">
+                <ul>
+                    <li>
+                        <i class="icon iconfont icon-tianjia" style="font-size: 20px"></i>
+                        <a href="../index.html">商城首页</a>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-pengyou" style="font-size: 20px"></i>
+                        <a href="./youhui.html">我的券</a>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-huodong" style="font-size: 20px"></i>
+                        <a href="./car.html">购物车</a>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-wode" style="font-size: 20px"></i>
+                        <a href="./User_Center.html">个人中心</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+      
+    <!-- <script>
+        var filter = document.querySelector('.j-filter');
+        var filterGoods = document.querySelector('.j-goods');
+        var show = true;
+        filterGoods.style.display = 'none';
+        filter.onclick = function(){
+            
+            filterGoods.style.display = show ? 'block' : 'none';
+            show =!show;
+        }
+    
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>详情页</title>
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1" id="vp">
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/detailPage.css" />
+		<script type="text/javascript">
+			// 把尺寸放大N倍（N是window.devicePixelRatio）
+			var wd = document.documentElement.clientWidth * window.devicePixelRatio / 10;
+			//物理像素*设备像素比=真实像素
+			document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+			// 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
+			var scale = 1 / window.devicePixelRatio;
+			var mstr = 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no';
+			document.getElementById("vp").content = mstr;
+		</script>
+		<script src="../lib/jquery-3.3.1.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/detailPage.js"></script>
+	</head>
+
+	<body>
+		<div class="detailPage">
+
+			<ul class="tab">
+				<span style="display:inline-block; font-size: 30px; line-height: 114px;" id="prev">&lt;</span>
+				<li>
+					<span class="shangpin">商品</span>
+				</li>
+				<li>
+					<span class="xq">详情</span>
+				</li>
+				<li>
+					<span class="canshu">参数</span>
+				</li>
+			</ul>
+
+			<div class="main">
+				<!-- 商品 -->
+				<div class="goods tab_click">
+					<!-- 商品轮播 -->
+					<div class="pictureShow" id="showPicture">
+						<ul class="pictureShow_lunbo">
+							<li><img src="#"></li>
+							<li><img src="#"></li>
+							<li><img src="#"></li>
+						</ul>
+					</div>
+					<div class="inDetail">
+						<div class="fui-cell-group fui-detail-group">
+							<div class="fui-cell">
+								<div class="fui-cell-text name " style="font-size:35px" id="goods_name">
+									
+								</div>
+
+							</div>
+							
+							<span class="goods_price" style="vertical-align: middle;font-size:40px;color:#ff5555;">52~138.6</span>
+
+							<div class="fui-cell titletabinfo" style="display:flex;line-height:60px;justify-content:space-between;color: #666;">
+								<p>快递：包邮 </p>
+								<p>销量：191 件 </p>
+								<p>广东省 东莞市</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="zhengpin">
+						<img src="../img/zhengpin.png" height="50" width="100%" />
+					</div>
+
+					<div class="select select_company">
+						<span class="goods_qty">请选择数量</span>
+						<span style="display:block">&gt;</span>
+					</div>
+
+					<div class="company select_company" style="margin:20px 0">
+						东莞市南城裕兴食品贸易商行
+						<img src="../img/jindian.png" style="width:165px; height:90px" />
+					</div>
+
+					<div class="shangla">
+						<img src="../img/shangla.png" style="width:100%" />
+					</div>
+
+					<div class="qty">
+						<div class="qty_top">
+							<div class="img">
+								<!-- <img src="https://go.myj.com.cn/attachment/images/3/2018/05/AvX2VO8tTioKQVK5ttO4VoO2tOo5vyZA.jpg" style="width:200px;height:200px" /> -->
+							</div>
+							<div class="jiaqian" style="float:left;display:flex;">
+								<div style="display: flex;flex-direction: column;">
+									<span class="price">￥89.00</span><br />
+									<span>请选择规格</span>
+								</div>
+								<span class="close" style="float:right;margin-left: 300px;display:block">x</span>
+							</div>
+						</div>
+						<div class="zhonglei" style="border-top:1px solid #ccc;border-bottom:1px solid #ccc;">
+							<span style="display:block;margin:35px 0;">牛肉丸+牛筋丸</span>
+						</div>
+						<div class="shuliang">
+							<span>数量</span>
+							<div>
+								<input type="button" class="add" value="+" />
+								<input type="num" value="1" class="sum" />
+								<input type="button" class="jian" value="-" />
+							</div>
+						</div>
+						<button class="confirm">确定</button>
+					</div>
+
+				</div>
+
+				<!-- 详情 -->
+				<!-- <div class="xiangqing tab_click">
+					<img src="../img/xq1.png" />
+					<img src="../img/xq2.png" />
+					<img src="../img/xq3.png" />
+					<img src="../img/xq4.png" />
+				</div> -->
+
+				<!-- 参数 -->
+				<!-- <div class="parameter tab_click">
+					<img src="../img/canshu1.png" />
+					<img src="../img/canshu2.png" />
+					<img src="../img/canshu3.png" />
+				</div> -->
+
+			</div>
+
+			<div class="footer">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="../img/guanzhu.png" height="98" width="39" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../img/dianpu.png" height="98" width="41" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../img/gouwuche.png" height="98" width="40" />
+						</a>
+					</li>
+					<li>
+						<button style="background:orange;" class="buy_car">加入购物车</button>
+					</li>
+					<li>
+						<button style="background:#ff3d3d;" id="btn_buy">立即购买</button>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,213 @@
+body,html{height: 100%;
+    /*background: #eaeaea;*/
+    position: relative;
+}
+.detailPage{
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.tab{
+    display:flex;
+    justify-content: space-between;
+    line-height: 70px;
+}
+
+
+
+.tab{
+    display: flex;
+    justify-content: space-around;
+    width: 732px;
+    height: 100px;
+    align-items: center;
+}
+.tab li {
+    width: 190px;
+    height: 50px;
+    
+    text-align: center;
+}
+.tab span {
+    font-size: 30px;
+}
+
+.tab_active{border-bottom: 2px solid red;}
+
+
+
+.main{
+    flex:1;
+    overflow-x: hidden;
+
+}
+/*商品*/
+/*商品图片轮播*/
+.main .pictureShow{
+    height: 800px;
+    position:relative;
+    width:750px;
+    overflow: hidden;
+}
+.main .pictureShow ul{
+    position: absolute;
+    left:0;
+    top:0;
+    overflow:hidden;
+}
+.main .pictureShow li{float:left;}
+.main .pictureShow img{
+    display: block;
+    width: 750px;
+    height: 800px;
+}
+.main .pictureShow > span{
+    position: absolute;
+    left:0;
+    top:50%;
+    width:50px;
+    height:100px;
+    line-height:100px;
+    text-align:center;
+    background-color: rgba(0,0,0,.3);
+    color:#fff;
+    transform: translate(0,-50%);
+}
+
+.main .pictureShow .page{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:3px;
+    text-align:center;
+}
+.main .pictureShow .page span{
+    display: inline-block;
+    margin:0 5px;
+    width:15px;
+    height:15px;
+    text-align:center;
+    line-height:40px;
+    border-radius:50%;
+    color:#666;
+    background-color: #cfcfcf;
+    font-size:27px;
+}
+.main .pictureShow .page span.active{
+    background-color: #f60;
+    color:#fff;
+}
+
+
+
+.qty{
+    width: 100%;
+    height: 901px;
+    background: #fff;
+    z-index: 12;
+    position: fixed;
+    bottom:0;
+    font-size: 35px;
+    display:none;
+}
+.active{
+    display:block;
+}
+.close{
+    display:none;
+}
+.qty .qty_top{
+    display:flex;
+    height:250px;
+}
+.qty .img{
+    width:200px;
+    height: 200px;
+}
+.qty .shuliang{
+    display:flex;
+    justify-content: space-between;
+}
+.qty .shuliang input{
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.qty .confirm{
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+    position: absolute;
+    bottom:0;
+    background: #fd5555;
+    color:#fff;
+}
+
+
+/*商品详情*/
+.inDetail{
+    display:flex;
+    width: 100%;
+    /*height: 400px;*/
+}
+
+.zhengpin{
+    width: 100%;
+    height: 50px;
+    background: #ccc;
+    margin-bottom: 10px;
+}
+
+.select_company{
+    display:flex;
+    justify-content: space-between;
+    height: 70px;
+    line-height: 70px;
+    margin:10px 0;
+    font-size: 25px;
+    padding: 0 5px;
+}
+
+/*详情*/
+.xiangqing{
+    /*display:none;*/
+}
+.xiangqing img{
+    width:100%;
+}
+
+
+
+
+/*参数*/
+.parameter{
+    /*display:none;*/
+}
+.parameter img{
+    width:100%;
+}
+
+
+/*footer*/
+.footer{
+    height:98px;
+    background:#fff;
+    border-top:1px solid #ccc;
+}
+.footer ul{
+    display:flex;
+}
+.footer ul li img{
+    width: 100px;
+}
+.footer ul li button{
+    width: 224px;
+    height: 98px;
+    font-size: 23px;
+    color:#fff;
+    border:0;
+}
+

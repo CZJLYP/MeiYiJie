@@ -1,0 +1,69 @@
+.youhuiquan{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    
+}
+
+.header{
+    background: #f7f7f7;
+    line-height: 100px;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.header .back{
+    float:left;
+}
+.header .title{
+    text-align: center;
+}
+
+.tab{
+    
+    
+}
+.tab_title{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    color:#666;
+}
+.tab_title li{
+    width: 294px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+.centera {
+    overflow:hidden;
+}
+.hover {
+    color: #ff5555;
+    border-bottom: 2px solid #ff5555;
+}
+.box {
+    display:none;
+}
+.btn {
+    
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn.btn-default-o {
+    background: transparent;
+    color: #666;
+    border: 2px solid #666;
+    height: 100px;
+    line-height: 100px;
+    margin:35px 40px;
+    text-align: center;
+    display: block;
+}
+.fui-message .content {
+    text-align: center;
+    margin: 10px 0;
+    color: #666;
+}
